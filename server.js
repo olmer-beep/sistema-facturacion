@@ -4,7 +4,8 @@
 // ========================================================
 const express = require('express');
 const PDFDocument = require('pdfkit');
-const sqlite3 = require('sqlite3');
+const Database = require("better-sqlite3");
+const db = new Database("sistema_facturas.db");
 const { open } = require('sqlite');
 const path = require('path');
 
